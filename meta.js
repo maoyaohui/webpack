@@ -49,6 +49,10 @@ module.exports = {
       "type": "confirm",
       "message": "Install vuex?"
     },
+    "element-ui":{
+      "type": "confirm",
+      "message": "Install element-ui?"
+    },
     "isMobile":{
         "type": "confirm",
         "message": "is Mobile project?"
