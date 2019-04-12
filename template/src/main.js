@@ -8,13 +8,17 @@ import App from './App'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 import router from './router'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/router}}
 
-{{#vuex}}
+{{#vuex}}//vuex为true的时候就会写入这些
 import Vuex from 'vuex'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 import store from  './store/store'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 Vue.use(Vuex){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/vuex}}
 
-
+{{#element-ui}}//element-ui为true的时候就会写入这些
+import ElementUI from 'element-ui'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+import 'element-ui/lib/theme-chalk/index.css'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+Vue.use(ElementUI)
+{{/element-ui}}
 
 Vue.config.productionTip = false{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
